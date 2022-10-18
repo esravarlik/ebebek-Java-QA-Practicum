@@ -41,12 +41,13 @@ class EmployeeTest {
 
     @Test
     void raiseSalary() {
-        assertEquals(219.08,testEmployee2.raiseSalary(),1f);
-        assertEquals(290,testEmployee4.raiseSalary(),0.01f);
-        assertEquals(900,testEmployee5.raiseSalary(),0.01f);
-        assertEquals(140,testEmployee3.raiseSalary(),0.01f);
+        assertEquals(100.1,testEmployee2.raiseSalary(),1f);
+        assertEquals(200,testEmployee4.raiseSalary(),0.01f);
+        assertEquals(750,testEmployee5.raiseSalary(),0.01f);
+        assertEquals(200,testEmployee3.raiseSalary(),0.01f);
         assertNotNull(testEmployee5.raiseSalary());
     }
+
 
     @AfterEach
     void tearDown() {

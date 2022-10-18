@@ -58,7 +58,11 @@ public class Employee {
         else
             throw new IllegalArgumentException("Invalid value");
 
-        return ((bonus() + totalRaise) - tax());
+        return totalRaise;
+    }
+
+    public Double finalSalary(){
+        return (bonus() + raiseSalary() - tax()) + salary;
     }
 
     @Override
@@ -69,6 +73,7 @@ public class Employee {
                 "The hire year of the employee is: " + hireYear + "\n" +
                 "Tax: " + tax() + "\n" + "Bonus: " + bonus() + "\n" +
                 "Raise salary: " + raiseSalary() + "\n" +
-                "Final salary: " + (raiseSalary() + salary);
+                "Salary with taxes and bonuses: " + (bonus() - tax() + salary) + "\n" +
+                "Final salary: " + finalSalary();
     }
 }

@@ -2,7 +2,7 @@ package main;
 
 public class Main {
     public static void main(String[] args) {
-        Employee employee = new Employee("Esra",1001,50,1998);
+        Employee employee = new Employee("Kemal",2000.0,45,1985);
         System.out.println(employee.toString());
     }
 }
